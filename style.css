@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* 
+   Name: Joy Yewon Cho
+   Student #: W0292611
+
+   Filename: style.css
+*/
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+
+/* All pages */
+
+html {
+    /* background: linear-gradient(40deg, #e66465, #9198e5); */
+    background-color: beige;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    display: block;
+    flex-direction: column;
+    font-family: "OCR A Std", monospace;
+    text-align: left;
+}
+
+#white{
+    background-color: white;
+}
+
+.sec{
+    display: block;
+}
+
+header li{
+    background-color: lightpink;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header li a:link{
+    text-decoration: none;
+}
+
+header li a:hover {
+    background-color: white;
+}
+
+#contact_lists li{
+    text-align: center;
+    text-decoration: none;
+}
+
+#name {
+    font-size: 1.5em;
+}
+
+.section_title{
+    color: brown;
+    margin-top: 3%;
+}
+/* #mainImg{
+    float: right;
+} */
+#leafImg {
+    float: left;
+    margin-right: 3%
+}
+.contactImg{
+    height:30px;
+    width: 30px;
+    margin-right: 2%;
+}
+
+#myContact li{
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+/* ============================================
+	Desktop Styles: 769px and greater  
+
+   ============================================
+*/
+@media only screen and (min-width: 769px) {
+    
+    /* body section, body footer{
+        margin-left: 14%;
+        margin-right: 14%;
+        margin-bottom: 3%;
+    } */
+    body{
+        padding-top: 1%;
+        padding-bottom: 5%;
+    }
+    .section_title{
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+
+    #white{
+        padding-top: 2%;
+        padding-bottom: 7%;
+        margin-left: 5%;
+        margin-right:5%;
+    }
+
+    .content{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+
+
+    
+/* 
+    body section {
+        margin-bottom:40px;
+    }
+
+    body footer {
+        margin-bottom: 50px;
+    } */
+
+
+
+    header ul{
+        position: relative;
+        margin-bottom: 0;
+        margin-left: 10%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        width: 50%;
+        height: 100px;
+    }
+    
+    header li{
+        float:left;
+        /* vertical-align: center; */
+        display: block;
+        width: 20%;
+        /* height: 70px; */
+    
+    }
+    
+    header li a:link {
+        padding-left: 10%;
+        width: 100%;
+        /* height: 70px; */
+    }
+    
+    header li a:hover {   
+        width: 20%;
+        height: 5%;
+    }
+
+    #mainImg {
+        /* border: 1px solid brown;
+        background-color: brown; */
+        /* border-radius: 5%; */
+        height: 300px;
+        width: 270px;
+    }
+
+    .capeImg{
+        height: 250px;
+        width: 200px;
+        /* margin: auto;
+        display: block; */
+        /* display: flex;
+        justify-content: center; */
+        /* display: flex;
+        justify-content: center;
+        align-items: left;*/
+    }
+
+    #leafImg{
+        height: 170px;
+        width: 150px;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+
+
+}
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+
+    body section, body footer{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #white{
+        padding-top: 2%;
+        padding-bottom: 7%;
+        margin-top: -5%;
+        margin-bottom: 7%;
+    }
+    
+    /* category */
+    header ul{
+        position: relative;
+        margin-bottom: 0;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        width: 90%;
+        height: 100px;
+    }
+    
+    header li{
+        float:left;
+        /* vertical-align: center; */
+        display: block;
+        width: 20%;
+        text-align: center;
+        /* height: 70px; */
+    
+    }
+    
+    header li a:link {
+        padding: 10%;
+        width: 100%;
+        /* height: 70px; */
+    }
+    
+    /* header li a:hover {   
+        width: 20%;
+        height: 5%;
+    } */
+
+    /* Image */
+    #mainImg {
+        height: 200px ;
+        width: 170px;
+    }
+
+    .capeImg{
+        height: 180px;
+        width: 150px;
+    }
+
+    #leafImg{
+        height: 140px;
+        width: 130px;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+
+
+}
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+    /* header{
+        margin-bottom:10px;
+    } */
+
+    header ul{
+        text-align:center;            
+        margin-left: auto;
+        margin-right: auto;
+        padding-inline-start: 0px;
+    }
+
+    
+    header li{
+        float: none;
+        border: 1px solid gray;
+
+    }
+
+
+    #mainImg {
+        height: 100px ;
+        width: 85px;
+    }
+
+    .capeImg{
+        display: none;
+    }
+
+    #leafImg{
+        display: none;
+    }
+    
+    .nonebold {
+        font-weight: 300;
+    }
+
+    .extra{
+        display: none;
+    }
+
+    #white{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+
+
+
+}
